@@ -18,23 +18,13 @@ class Square extends Shape {
 
 class Triangle extends Shape {
     generateCode() {
-        return `<polygon points="200,10 250,190 150,190" fill="${this.fill}`
-    }
-}
+        
+                return `<polygon points="200,10 250,190 150,190" fill="${this.fill}"/>`
+            }
+        }
 
 
-module.exports = { Circle, Square };
 
-// function renderShapeColor(shapecolor) {
 
-// }
+module.exports = { Circle, Square, Triangle };
 
-// function renderShape(shape) {
-
-// }
-
-// function generateSVG({ text, textcolor, shape, shapecolor}) {
-//     return `
-
-//     `
-// }

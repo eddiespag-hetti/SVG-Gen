@@ -3,7 +3,7 @@ const inquirer = require("inquirer");
 const { writeFile } = require("fs").promises;
 
 const Text = require("./lib/text");
-const { Circle, Square } = require("./lib/shapes");
+const { Circle, Square, Triangle } = require("./lib/shapes");
 const SVG = require("./lib/svg");
 const { write } = require("fs");
 
@@ -45,12 +45,15 @@ const init = () => {
 
     let newShape;
 
-    if(answers.shape == "circle") {
+    if(answers.shape === "circle") {
       newShape = new Circle(answers.shapecolor);
-    } else if(answers.shape == "square") {
+    } else if(answers.shape === "square") {
       newShape = new Square(answers.shapecolor);
+    } else if (answers.shape === "triangle") {
+      newShape = new Triangle(answers.shapecolor);
     }
 
+   
     const shapeCode = newShape.generateCode();
 
     const newSvg = new SVG(shapeCode, textCode);
@@ -64,10 +67,10 @@ const init = () => {
       })
       .catch((err) => {
         console.log(err);
-
         console.log("There has been an error!");
       });
   });
 };
+
 
 init();
