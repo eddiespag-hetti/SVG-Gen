@@ -1,5 +1,5 @@
 
-
+// Text class
 class Text {
     constructor(fill, textVal) {
         this.x = '150';
@@ -10,6 +10,7 @@ class Text {
         this.textVal = textVal
     }
 
+    
     generateCode() {
         return `<text x="${this.x}" y="${this.y}" font-size="${this.fontSize}" text-anchor="${this.textAnchor}" fill="${this.fill}">${this.textVal}</text>`
     }

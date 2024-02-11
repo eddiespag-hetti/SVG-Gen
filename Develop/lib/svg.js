@@ -1,5 +1,5 @@
 class SVG {
-    // properties
+    // properties of SVG Class
     constructor(shapeCode, textCode) {
         this.version = "1.1";
         this.width = "300";
@@ -10,7 +10,7 @@ class SVG {
     }
 
 
-    // methods
+    // Function to generate the SVG code
     generateCode() {
         return `
 <svg version="${this.version}" width="${this.width}" height="${this.height}" xmlns="${this.xmlns}">
@@ -21,6 +21,6 @@ class SVG {
     }
 }
 
-
+// Exporting this file to be utilised in other scripts in thie directory
 module.exports = SVG;
 
