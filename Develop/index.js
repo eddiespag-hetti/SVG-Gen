@@ -65,7 +65,7 @@ const init = () => {
     console.log(svgCode);
 
 // writeFile() function to write the SVG files
-    writeFile("./lib/logo.svg", svgCode)
+    writeFile("./lib/example/logo.svg", svgCode)
       .then(() => {
         console.log("SVG has been generated!");
       })
