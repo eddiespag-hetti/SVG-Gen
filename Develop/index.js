@@ -2,13 +2,16 @@
 const inquirer = require("inquirer");
 const { writeFile } = require("fs").promises;
 
+// Imports others scripts to enable use of different classes
 const Text = require("./lib/text");
 const { Circle, Square, Triangle } = require("./lib/shapes");
 const SVG = require("./lib/svg");
 const { write } = require("fs");
 
-// Array of questions/options
 
+
+
+// Array of questions/options
 const promptUser = () => {
   return inquirer.prompt([
     {
@@ -45,15 +48,15 @@ const init = () => {
 
     let newShape;
 
-    if(answers.shape === "circle") {
+    // if/else statement to determine which shape the user has input
+    if (answers.shape === "circle") {
       newShape = new Circle(answers.shapecolor);
-    } else if(answers.shape === "square") {
+    } else if (answers.shape === "square") {
       newShape = new Square(answers.shapecolor);
     } else if (answers.shape === "triangle") {
       newShape = new Triangle(answers.shapecolor);
     }
 
-   
     const shapeCode = newShape.generateCode();
 
     const newSvg = new SVG(shapeCode, textCode);
@@ -61,10 +64,12 @@ const init = () => {
 
     console.log(svgCode);
 
+// writeFile() function to write the SVG files
     writeFile("./lib/logo.svg", svgCode)
       .then(() => {
         console.log("SVG has been generated!");
       })
+      // Err Handling
       .catch((err) => {
         console.log(err);
         console.log("There has been an error!");
@@ -72,5 +77,5 @@ const init = () => {
   });
 };
 
-
+// Calls the init() function.
 init();
