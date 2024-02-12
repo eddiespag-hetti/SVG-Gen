@@ -2,9 +2,9 @@
 // Text class
 class Text {
     constructor(fill, textVal) {
-        this.x = '150';
-        this.y = '160';
-        this.fontSize = '60';
+        this.x = '140';
+        this.y = '145';
+        this.fontSize = '58';
         this.textAnchor = 'middle';
         this.fill = fill;
         this.textVal = textVal
