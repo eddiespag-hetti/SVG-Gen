@@ -3,7 +3,7 @@
 class Text {
     constructor(fill, textVal) {
         this.x = '150';
-        this.y = '125';
+        this.y = '160';
         this.fontSize = '60';
         this.textAnchor = 'middle';
         this.fill = fill;

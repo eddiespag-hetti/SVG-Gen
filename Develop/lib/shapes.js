@@ -5,10 +5,19 @@ class Shape {
   }
 }
 
+// class Shape {
+//   constructor() {
+//     this.fill = '';
+//   } 
+//   setColor(color) {
+//     this.fill = color;
+//   }
+// }
+
 // Circle is the child to Shape and inherits all its properties
 class Circle extends Shape {
   generateCode() {
-    return `<circle cx="150" cy="100" r="80" fill="${this.fill}" />`;
+    return `<circle cx="150" cy="100" r="80" fill="${this.fill}"/>`;
   }
 }
 
@@ -26,5 +35,10 @@ class Triangle extends Shape {
   }
 }
 
+// const circle = new Circle(); 
+// circle.setColor('blue');
+
+// const resultSvg = circle.generateCode()
+// console.log(resultSvg);
 // Exports these three classes so that usuable in other scripts
 module.exports = { Circle, Square, Triangle };
