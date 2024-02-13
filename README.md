@@ -48,6 +48,8 @@ Then all you need to do is open up an intergrated terminal in the same folder an
 
 Please watch our video walkthrough via the link below -
 
+ - https://drive.google.com/file/d/12nrHFp150b6946M4Iw1thYna0HgGSWOt/view
+
 
 
 ## Usage 
