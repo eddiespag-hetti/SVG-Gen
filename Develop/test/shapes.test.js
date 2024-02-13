@@ -19,6 +19,7 @@ expect(square.generateCode()).toEqual(expectSvg);
     })
 });
 
+// Test to be run on the Triangle class
 describe('Triangle', () => {
     it('should render a triangle shape', () => {
         const expectSvg = '<polygon points="150,10 250,190 50,190" fill="blue"/>';

@@ -6,7 +6,7 @@ const { writeFile } = require("fs").promises;
 const Text = require("./lib/text");
 const { Circle, Square, Triangle } = require("./lib/shapes");
 const SVG = require("./lib/svg");
-const { write } = require("fs");
+// const { write } = require("fs");
 
 
 

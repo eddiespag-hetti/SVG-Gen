@@ -10,11 +10,11 @@ class Text {
         this.textVal = textVal
     }
 
-    
+    // Function to generate the text code - returns the dynamically filled properties of the Text constructor
     generateCode() {
         return `<text x="${this.x}" y="${this.y}" font-size="${this.fontSize}" text-anchor="${this.textAnchor}" fill="${this.fill}">${this.textVal}</text>`
     }
 }
 
-
+// Exports Text class to be used in other script files
 module.exports = Text;

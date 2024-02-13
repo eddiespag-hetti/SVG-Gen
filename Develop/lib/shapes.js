@@ -5,7 +5,6 @@ class Shape {
   }
 }
 
-
 // Circle is the child to Shape and inherits all its properties
 class Circle extends Shape {
   generateCode() {
@@ -27,10 +26,5 @@ class Triangle extends Shape {
   }
 }
 
-// const circle = new Circle(); 
-// circle.setColor('blue');
-
-// const resultSvg = circle.generateCode()
-// console.log(resultSvg);
 // Exports these three classes so that usuable in other scripts
 module.exports = { Circle, Square, Triangle };
