@@ -5,14 +5,6 @@ class Shape {
   }
 }
 
-// class Shape {
-//   constructor() {
-//     this.fill = '';
-//   } 
-//   setColor(color) {
-//     this.fill = color;
-//   }
-// }
 
 // Circle is the child to Shape and inherits all its properties
 class Circle extends Shape {
